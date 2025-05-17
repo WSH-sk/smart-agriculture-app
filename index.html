@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="manifest.json">
+    <title>农业宝 - 农产品交易与知识普及平台</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2553510_1f3wvk5qrur.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="header-title">农业宝</div>
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="搜索农产品、种植技术、病虫害防治...">
+        </div>
+        <i class="fas fa-ellipsis-v"></i>
+    </header>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 轮播图 -->
+        <div class="swiper">
+            <div class="swiper-item active">
+                <img src="https://via.placeholder.com/750x300/4CAF50/FFFFFF?text=优质农产品直供" class="swiper-img" alt="轮播图1">
+            </div>
+            <div class="swiper-item">
+                <img src="https://via.placeholder.com/750x300/FF9800/FFFFFF?text=专家在线答疑" class="swiper-img" alt="轮播图2">
+            </div>
+            <div class="swiper-item">
+                <img src="https://via.placeholder.com/750x300/2E7D32/FFFFFF?text=农业技术培训" class="swiper-img" alt="轮播图3">
+            </div>
+            <div class="swiper-dots">
+                <div class="swiper-dot active"></div>
+                <div class="swiper-dot"></div>
+                <div class="swiper-dot"></div>
+            </div>
+        </div>
+
+        <!-- 分类导航 -->
+        <div class="category-nav">
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="category-name">蔬菜水果</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-wheat-awn"></i>
+                </div>
+                <div class="category-name">粮油米面</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-egg"></i>
+                </div>
+                <div class="category-name">禽畜产品</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-fish"></i>
+                </div>
+                <div class="category-name">水产海鲜</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="category-name">茶叶</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-apple-alt"></i>
+                </div>
+                <div class="category-name">干果坚果</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-tractor"></i>
+                </div>
+                <div class="category-name">农资农具</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-book"></i>
+                </div>
+                <div class="category-name">知识课堂</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <div class="category-name">专家问答</div>
+            </div>
+            <div class="category-item">
+                <div class="category-icon">
+                    <i class="fas fa-th"></i>
+                </div>
+                <div class="category-name">全部分类</div>
+            </div>
+        </div>
+
+        <!-- 特色专区 -->
+        <div class="product-section">
+            <div class="section-header">
+                <div class="section-title">特色专区</div>
+                <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div style="display: flex; overflow-x: auto; padding: 10px; background-color: white;">
+                <div style="flex: 0 0 auto; width: 120px; margin-right: 10px; text-align: center;">
+                    <div style="background-color: #f0f9eb; border-radius: 8px; padding: 10px;">
+                        <img src="https://via.placeholder.com/100x100/4CAF50/FFFFFF?text=有机蔬菜" style="width: 100%; border-radius: 4px;" alt="有机蔬菜">
+                        <div style="margin-top: 5px; font-size: 12px; color: var(--primary-color);">有机蔬菜</div>
+                    </div>
+                </div>
+                <div style="flex: 0 0 auto; width: 120px; margin-right: 10px; text-align: center;">
+                    <div style="background-color: #fff7e6; border-radius: 8px; padding: 10px;">
+                        <img src="https://via.placeholder.com/100x100/FF9800/FFFFFF?text=地方特产" style="width: 100%; border-radius: 4px;" alt="地方特产">
+                        <div style="margin-top: 5px; font-size: 12px; color: var(--secondary-color);">地方特产</div>
+                    </div>
+                </div>
+                <div style="flex: 0 0 auto; width: 120px; margin-right: 10px; text-align: center;">
+                    <div style="background-color: #f0f9eb; border-radius: 8px; padding: 10px;">
+                        <img src="https://via.placeholder.com/100x100/4CAF50/FFFFFF?text=新鲜水果" style="width: 100%; border-radius: 4px;" alt="新鲜水果">
+                        <div style="margin-top: 5px; font-size: 12px; color: var(--primary-color);">新鲜水果</div>
+                    </div>
+                </div>
+                <div style="flex: 0 0 auto; width: 120px; text-align: center;">
+                    <div style="background-color: #fff7e6; border-radius: 8px; padding: 10px;">
+                        <img src="https://via.placeholder.com/100x100/FF9800/FFFFFF?text=农家自制" style="width: 100%; border-radius: 4px;" alt="农家自制">
+                        <div style="margin-top: 5px; font-size: 12px; color: var(--secondary-color);">农家自制</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热销产品 -->
+        <div class="product-section">
+            <div class="section-header">
+                <div class="section-title">热销产品</div>
+                <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="product-list">
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x300/4CAF50/FFFFFF?text=有机蔬菜" alt="有机蔬菜">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">有机蔬菜礼盒 新鲜直达 无农药</div>
+                        <div class="product-price">68.8</div>
+                        <div class="product-sales">已售 2345</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x300/FF9800/FFFFFF?text=大米" alt="大米">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">东北黑土地有机大米 5kg装</div>
+                        <div class="product-price">59.9</div>
+                        <div class="product-sales">已售 1892</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x300/2E7D32/FFFFFF?text=水果" alt="水果">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">应季水果组合 新鲜直发</div>
+                        <div class="product-price">99.8</div>
+                        <div class="product-sales">已售 1256</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="https://via.placeholder.com/300x300/8BC34A/FFFFFF?text=茶叶" alt="茶叶">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">高山云雾茶 明前特级绿茶 250g</div>
+                        <div class="product-price">128</div>
+                        <div class="product-sales">已售 986</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 知识专区 -->
+        <div class="product-section">
+            <div class="section-header">
+                <div class="section-title">农业知识</div>
+                <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="article-list">
+                <div class="article-item">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/200x140/4CAF50/FFFFFF?text=种植技术" alt="种植技术">
+                    </div>
+                    <div class="article-info">
+                        <div class="article-title">水稻高产栽培技术要点与病虫害防治</div>
+                        <div class="article-meta">
+                            <span class="article-author">张农博士</span>
+                            <span class="article-time">2023-05-10</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/200x140/FF9800/FFFFFF?text=病虫害防治" alt="病虫害防治">
+                    </div>
+                    <div class="article-info">
+                        <div class="article-title">果树常见病虫害的生态防治方法</div>
+                        <div class="article-meta">
+                            <span class="article-author">李教授</span>
+                            <span class="article-time">2023-05-08</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="article-item">
+                    <div class="article-img">
+                        <img src="https://via.placeholder.com/200x140/2E7D32/FFFFFF?text=农业政策" alt="农业政策">
+                    </div>
+                    <div class="article-info">
+                        <div class="article-title">2023年最新农业补贴政策解读</div>
+                        <div class="article-meta">
+                            <span class="article-author">王政策研究员</span>
+                            <span class="article-time">2023-05-05</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 专家问答 -->
+        <div class="product-section">
+            <div class="section-header">
+                <div class="section-title">专家问答</div>
+                <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="qa-list">
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span class="tag tag-green">提问</span> 水稻田间出现黄叶，是什么原因？
+                    </div>
+                    <div class="qa-answer">
+                        <span class="tag tag-orange">回答</span> 水稻黄叶可能有多种原因：1. 缺素症状，特别是氮肥不足；2. 病虫害侵染，如稻瘟病；3. 水分管理不当，如长期渍水。建议检查叶片具体症状，如黄化位置、是否有斑点等，以确定具体原因。
+                    </div>
+                    <div class="qa-meta">
+                        <span class="qa-expert">张农博士</span>
+                        <span class="qa-time">2023-05-12</span>
+                    </div>
+                </div>
+                <div class="qa-item">
+                    <div class="qa-question">
+                        <span class="tag tag-green">提问</span> 苹果树春季应该如何修剪？
+                    </div>
+                    <div class="qa-answer">
+                        <span class="tag tag-orange">回答</span> 苹果树春季修剪应在萌芽前进行，主要目的是调整树形、控制树势。修剪原则：1. 去除病弱枝、重叠枝；2. 保留结果枝组；3. 适当短截延长枝；4. 注意光照均匀分布。修剪时要根据树龄和品种特性调整强度。
+                    </div>
+                    <div class="qa-meta">
+                        <span class="qa-expert">刘果树专家</span>
+                        <span class="qa-time">2023-05-09</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <div class="tab-item active" data-target="index.html">
+            <i class="fas fa-home tab-icon"></i>
+            <span class="tab-text">首页</span>
+        </div>
+        <div class="tab-item" data-target="pages/category.html">
+            <i class="fas fa-th-large tab-icon"></i>
+            <span class="tab-text">分类</span>
+        </div>
+        <div class="tab-item" data-target="pages/knowledge.html">
+            <i class="fas fa-book tab-icon"></i>
+            <span class="tab-text">知识</span>
+        </div>
+        <div class="tab-item" data-target="pages/user.html">
+            <i class="fas fa-user tab-icon"></i>
+            <span class="tab-text">我的</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+    // 注册Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker注册成功:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('ServiceWorker注册失败:', error);
+                });
+        });
+    }
+    </script>
+</body>
+</html>7

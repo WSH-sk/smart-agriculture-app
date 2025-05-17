@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="../manifest.json">
+    <title>分类 - 农业宝</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2553510_1f3wvk5qrur.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="header-title">分类</div>
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="搜索农产品、种植技术、病虫害防治...">
+        </div>
+        <i class="fas fa-ellipsis-v"></i>
+    </header>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 分类导航 -->
+        <div style="display: flex; height: calc(100vh - 94px);">
+            <!-- 左侧分类菜单 -->
+            <div style="width: 25%; background-color: #f5f5f5; overflow-y: auto; height: 100%;">
+                <div style="padding: 15px 10px; text-align: center; background-color: var(--primary-color); color: white; font-weight: bold;">
+                    全部分类
+                </div>
+                <div style="padding: 15px 10px; text-align: center; background-color: white; border-left: 3px solid var(--primary-color);">
+                    蔬菜水果
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    粮油米面
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    禽畜产品
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    水产海鲜
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    茶叶
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    干果坚果
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    农资农具
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    地方特产
+                </div>
+                <div style="padding: 15px 10px; text-align: center;">
+                    有机认证
+                </div>
+            </div>
+            
+            <!-- 右侧内容区 -->
+            <div style="width: 75%; overflow-y: auto; height: 100%;">
+                <!-- 子分类 -->
+                <div style="padding: 15px; background-color: white;">
+                    <div style="font-weight: bold; margin-bottom: 10px;">蔬菜水果</div>
+                    <div style="display: flex; flex-wrap: wrap;">
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/4CAF50/FFFFFF?text=叶菜类" style="width: 60px; height: 60px; border-radius: 50%;" alt="叶菜类">
+                            <div style="font-size: 12px; margin-top: 5px;">叶菜类</div>
+                        </div>
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/4CAF50/FFFFFF?text=根茎类" style="width: 60px; height: 60px; border-radius: 50%;" alt="根茎类">
+                            <div style="font-size: 12px; margin-top: 5px;">根茎类</div>
+                        </div>
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/4CAF50/FFFFFF?text=瓜果类" style="width: 60px; height: 60px; border-radius: 50%;" alt="瓜果类">
+                            <div style="font-size: 12px; margin-top: 5px;">瓜果类</div>
+                        </div>
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/FF9800/FFFFFF?text=浆果类" style="width: 60px; height: 60px; border-radius: 50%;" alt="浆果类">
+                            <div style="font-size: 12px; margin-top: 5px;">浆果类</div>
+                        </div>
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/FF9800/FFFFFF?text=柑橘类" style="width: 60px; height: 60px; border-radius: 50%;" alt="柑橘类">
+                            <div style="font-size: 12px; margin-top: 5px;">柑橘类</div>
+                        </div>
+                        <div style="width: 33.33%; text-align: center; margin-bottom: 15px;">
+                            <img src="https://via.placeholder.com/80x80/FF9800/FFFFFF?text=核果类" style="width: 60px; height: 60px; border-radius: 50%;" alt="核果类">
+                            <div style="font-size: 12px; margin-top: 5px;">核果类</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 筛选栏 -->
+                <div class="filter-bar">
+                    <div class="filter-item active">综合</div>
+                    <div class="filter-item">销量</div>
+                    <div class="filter-item">价格</div>
+                    <div class="filter-item">筛选 <i class="fas fa-filter" style="font-size: 12px;"></i></div>
+                </div>
+                
+                <!-- 产品列表 -->
+                <div class="product-list">
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/4CAF50/FFFFFF?text=有机菠菜" alt="有机菠菜">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">有机菠菜 500g 新鲜采摘</div>
+                            <div class="product-price">12.8</div>
+                            <div class="product-sales">已售 1245</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/4CAF50/FFFFFF?text=生菜" alt="生菜">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">有机生菜 300g 水培无农药</div>
+                            <div class="product-price">9.9</div>
+                            <div class="product-sales">已售 986</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/4CAF50/FFFFFF?text=小白菜" alt="小白菜">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">小白菜 400g 新鲜蔬菜</div>
+                            <div class="product-price">7.5</div>
+                            <div class="product-sales">已售 1567</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/4CAF50/FFFFFF?text=西兰花" alt="西兰花">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">西兰花 500g 绿色有机</div>
+                            <div class="product-price">15.8</div>
+                            <div class="product-sales">已售 876</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/FF9800/FFFFFF?text=胡萝卜" alt="胡萝卜">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">胡萝卜 500g 新鲜蔬菜</div>
+                            <div class="product-price">8.8</div>
+                            <div class="product-sales">已售 1023</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/FF9800/FFFFFF?text=土豆" alt="土豆">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">土豆 1kg 新鲜蔬菜</div>
+                            <div class="product-price">10.5</div>
+                            <div class="product-sales">已售 2345</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/FF9800/FFFFFF?text=苹果" alt="苹果">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">红富士苹果 1kg 新鲜水果</div>
+                            <div class="product-price">25.8</div>
+                            <div class="product-sales">已售 1678</div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="https://via.placeholder.com/300x300/FF9800/FFFFFF?text=香蕉" alt="香蕉">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-name">香蕉 500g 新鲜水果</div>
+                            <div class="product-price">12.8</div>
+                            <div class="product-sales">已售 1456</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 加载更多 -->
+                <div style="text-align: center; padding: 15px; color: #999; font-size: 14px;">
+                    上拉加载更多
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <div class="tab-item" data-target="../index.html">
+            <i class="fas fa-home tab-icon"></i>
+            <span class="tab-text">首页</span>
+        </div>
+        <div class="tab-item active" data-target="category.html">
+            <i class="fas fa-th-large tab-icon"></i>
+            <span class="tab-text">分类</span>
+        </div>
+        <div class="tab-item" data-target="knowledge.html">
+            <i class="fas fa-book tab-icon"></i>
+            <span class="tab-text">知识</span>
+        </div>
+        <div class="tab-item" data-target="user.html">
+            <i class="fas fa-user tab-icon"></i>
+            <span class="tab-text">我的</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+    <script>
+    // 注册Service Worker
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('../sw.js')
+                .then(registration => {
+                    console.log('ServiceWorker注册成功:', registration.scope);
+                })
+                .catch(error => {
+                    console.log('ServiceWorker注册失败:', error);
+                });
+        });
+    }
+    </script>
+</body>
+</html>

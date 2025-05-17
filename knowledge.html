@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="../manifest.json">
+    <meta name="theme-color" content="#4CAF50">
+    <link rel="manifest" href="../manifest.json">
+    <title>知识中心 - 农业宝</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- 引入字体图标库 -->
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_2553510_1f3wvk5qrur.css">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 头部 -->
+    <header class="header">
+        <div class="header-title">知识中心</div>
+        <div class="search-bar">
+            <i class="fas fa-search search-icon"></i>
+            <input type="text" placeholder="搜索农业知识、种植技术、病虫害防治...">
+        </div>
+        <i class="fas fa-ellipsis-v"></i>
+    </header>
+
+    <!-- 主内容区域 -->
+    <div class="main-content">
+        <!-- 知识分类选项卡 -->
+        <div class="knowledge-tabs">
+            <div class="knowledge-tab active">文章</div>
+            <div class="knowledge-tab">视频</div>
+            <div class="knowledge-tab">问答</div>
+            <div class="knowledge-tab">课程</div>
+        </div>
+        
+        <!-- 文章内容 -->
+        <div class="knowledge-content" style="display: block;">
+            <!-- 轮播图 -->
+            <div class="swiper" style="height: 150px;">
+                <div class="swiper-item active">
+                    <img src="https://via.placeholder.com/750x300/4CAF50/FFFFFF?text=农业技术专题" class="swiper-img" alt="农业技术专题">
+                </div>
+                <div class="swiper-item">
+                    <img src="https://via.placeholder.com/750x300/FF9800/FFFFFF?text=病虫害防治指南" class="swiper-img" alt="病虫害防治指南">
+                </div>
+                <div class="swiper-item">
+                    <img src="https://via.placeholder.com/750x300/2E7D32/FFFFFF?text=有机种植技术" class="swiper-img" alt="有机种植技术">
+                </div>
+                <div class="swiper-dots">
+                    <div class="swiper-dot active"></div>
+                    <div class="swiper-dot"></div>
+                    <div class="swiper-dot"></div>
+                </div>
+            </div>
+            
+            <!-- 文章分类 -->
+            <div style="background-color: white; padding: 15px 0; display: flex; flex-wrap: wrap; margin-bottom: 10px;">
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f9eb; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-seedling" style="color: var(--primary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">种植技术</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #fff7e6; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-bug" style="color: var(--secondary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">病虫害防治</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f9eb; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-tractor" style="color: var(--primary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">农机使用</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #fff7e6; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-file-alt" style="color: var(--secondary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">政策解读</div>
+                </div>
+            </div>
+            
+            <!-- 推荐文章 -->
+            <div class="product-section">
+                <div class="section-header">
+                    <div class="section-title">推荐文章</div>
+                    <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="article-list">
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="https://via.placeholder.com/200x140/4CAF50/FFFFFF?text=水稻种植" alt="水稻种植">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-title">水稻高产栽培技术要点与病虫害防治</div>
+                            <div class="article-meta">
+                                <span class="article-author">张农博士</span>
+                                <span class="article-time">2023-05-10</span>
+                            </div>
+            </div>
+        </div>
+
+    <!-- 底部导航栏 -->
+    <div class="tab-bar">
+        <div class="tab-item" data-target="../index.html">
+            <i class="fas fa-home tab-icon"></i>
+            <span class="tab-text">首页</span>
+        </div>
+        <div class="tab-item" data-target="category.html">
+            <i class="fas fa-th-large tab-icon"></i>
+            <span class="tab-text">分类</span>
+        </div>
+        <div class="tab-item active" data-target="knowledge.html">
+            <i class="fas fa-book tab-icon"></i>
+            <span class="tab-text">知识</span>
+        </div>
+        <div class="tab-item" data-target="user.html">
+            <i class="fas fa-user tab-icon"></i>
+            <span class="tab-text">我的</span>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="https://via.placeholder.com/200x140/FF9800/FFFFFF?text=果树管理" alt="果树管理">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-title">果树常见病虫害的生态防治方法</div>
+                            <div class="article-meta">
+                                <span class="article-author">李教授</span>
+                                <span class="article-time">2023-05-08</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="https://via.placeholder.com/200x140/2E7D32/FFFFFF?text=农业政策" alt="农业政策">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-title">2023年最新农业补贴政策解读</div>
+                            <div class="article-meta">
+                                <span class="article-author">王政策研究员</span>
+                                <span class="article-time">2023-05-05</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="https://via.placeholder.com/200x140/4CAF50/FFFFFF?text=有机种植" alt="有机种植">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-title">有机蔬菜种植技术与认证标准详解</div>
+                            <div class="article-meta">
+                                <span class="article-author">赵有机专家</span>
+                                <span class="article-time">2023-05-03</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-item">
+                        <div class="article-img">
+                            <img src="https://via.placeholder.com/200x140/FF9800/FFFFFF?text=土壤改良" alt="土壤改良">
+                        </div>
+                        <div class="article-info">
+                            <div class="article-title">农田土壤改良技术与肥料合理使用方法</div>
+                            <div class="article-meta">
+                                <span class="article-author">钱土壤专家</span>
+                                <span class="article-time">2023-04-28</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 热门专题 -->
+            <div class="product-section">
+                <div class="section-header">
+                    <div class="section-title">热门专题</div>
+                    <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div style="padding: 15px; background-color: white;">
+                    <div style="display: flex; margin-bottom: 15px;">
+                        <div style="flex: 1; margin-right: 10px; position: relative;">
+                            <img src="https://via.placeholder.com/400x200/4CAF50/FFFFFF?text=春季种植指南" style="width: 100%; border-radius: 8px;" alt="春季种植指南">
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                春季种植指南
+                            </div>
+                        </div>
+                        <div style="flex: 1; position: relative;">
+                            <img src="https://via.placeholder.com/400x200/FF9800/FFFFFF?text=农药减量增效" style="width: 100%; border-radius: 8px;" alt="农药减量增效">
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                农药减量增效
+                            </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;">
+                        <div style="flex: 1; margin-right: 10px; position: relative;">
+                            <img src="https://via.placeholder.com/400x200/2E7D32/FFFFFF?text=智慧农业" style="width: 100%; border-radius: 8px;" alt="智慧农业">
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                智慧农业
+                            </div>
+                        </div>
+                        <div style="flex: 1; position: relative;">
+                            <img src="https://via.placeholder.com/400x200/8BC34A/FFFFFF?text=农产品营销" style="width: 100%; border-radius: 8px;" alt="农产品营销">
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                农产品营销
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 视频内容 -->
+        <div class="knowledge-content" style="display: none;">
+            <!-- 视频分类 -->
+            <div style="background-color: white; padding: 15px 0; display: flex; flex-wrap: wrap; margin-bottom: 10px;">
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f9eb; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-video" style="color: var(--primary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">种植教学</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #fff7e6; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-video" style="color: var(--secondary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">农机操作</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #f0f9eb; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-video" style="color: var(--primary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">病虫害识别</div>
+                </div>
+                <div style="width: 25%; text-align: center;">
+                    <div style="width: 50px; height: 50px; border-radius: 50%; background-color: #fff7e6; display: flex; align-items: center; justify-content: center; margin: 0 auto 5px;">
+                        <i class="fas fa-video" style="color: var(--secondary-color); font-size: 24px;"></i>
+                    </div>
+                    <div style="font-size: 12px;">农产品加工</div>
+                </div>
+            </div>
+            
+            <!-- 推荐视频 -->
+            <div class="product-section">
+                <div class="section-header">
+                    <div class="section-title">推荐视频</div>
+                    <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div style="padding: 15px; background-color: white;">
+                    <div style="margin-bottom: 15px;">
+                        <div style="position: relative; margin-bottom: 10px;">
+                            <img src="https://via.placeholder.com/750x400/4CAF50/FFFFFF?text=水稻种植技术视频" style="width: 100%; border-radius: 8px;" alt="水稻种植技术视频">
+                            <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50px; height: 50px; border-radius: 50%; background-color: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center;">
+                                <i class="fas fa-play" style="color: white; font-size: 20px;"></i>
+                            </div>
+                            <div style="position: absolute; bottom: 10px; right: 10px; background-color: rgba(0,0,0,0.5); color: white; padding: 2px 5px; border-radius: 4px; font-size: 12px;">
+                                15:30
+                            </div>
+                        </div>
+                        <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">水稻高产栽培技术详解</div>
+                        <div style="display: flex; justify-content: space-between; font-size: 12px; color: #999;">
+                            <div>张农博士</div>
+                            <div>播放量: 12.5万</div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; margin-bottom: 15px;">
+                        <div style="position: relative; width: 120px; margin-right: 10px;">
+                            <img src="https://via.placeholder.com/240x135/FF9800/FFFFFF?text=果树修剪" style="width: 100%; border-radius: 4px;" alt="果树修剪">
+                            <div style="position: absolute; bottom: 5px; right: 5px; background-color: rgba(0,0,0,0.5); color: white; padding: 1px 3px; border-radius: 2px; font-size: 10px;">
+                                10:15
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                果树春季修剪技术要点与注意事项
+                            </div>
+                            <div style="font-size: 12px; color: #999; margin-bottom: 5px;">李教授</div>
+                            <div style="font-size: 12px; color: #999;">播放量: 8.3万</div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; margin-bottom: 15px;">
+                        <div style="position: relative; width: 120px; margin-right: 10px;">
+                            <img src="https://via.placeholder.com/240x135/2E7D32/FFFFFF?text=农药喷洒" style="width: 100%; border-radius: 4px;" alt="农药喷洒">
+                            <div style="position: absolute; bottom: 5px; right: 5px; background-color: rgba(0,0,0,0.5); color: white; padding: 1px 3px; border-radius: 2px; font-size: 10px;">
+                                08:42
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                农药安全使用技术与减量增效方法
+                            </div>
+                            <div style="font-size: 12px; color: #999; margin-bottom: 5px;">王植保专家</div>
+                            <div style="font-size: 12px; color: #999;">播放量: 6.7万</div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;">
+                        <div style="position: relative; width: 120px; margin-right: 10px;">
+                            <img src="https://via.placeholder.com/240x135/8BC34A/FFFFFF?text=土壤检测" style="width: 100%; border-radius: 4px;" alt="土壤检测">
+                            <div style="position: absolute; bottom: 5px; right: 5px; background-color: rgba(0,0,0,0.5); color: white; padding: 1px 3px; border-radius: 2px; font-size: 10px;">
+                                12:20
+                            </div>
+                        </div>
+                        <div style="flex: 1;">
+                            <div style="font-size: 14px; font-weight: bold; margin-bottom: 5px; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;">
+                                土壤检测与改良技术实操指南
+                            </div>
+                            <div style="font-size: 12px; color: #999; margin-bottom: 5px;">钱土壤专家</div>
+                            <div style="font-size: 12px; color: #999;">播放量: 5.9万</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 直播课程 -->
+            <div class="product-section">
+                <div class="section-header">
+                    <div class="section-title">直播课程</div>
+                    <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div style="padding: 15px; background-color: white;">
+                    <div style="position: relative; margin-bottom: 15px;">
+                        <img src="https://via.placeholder.com/750x300/4CAF50/FFFFFF?text=直播课程" style="width: 100%; border-radius: 8px;" alt="直播课程">
+                        <div style="position: absolute; top: 10px; left: 10px; background-color: rgba(255, 87, 34, 0.8); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                            直播中
+                        </div>
+                        <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 15px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                            <div style="font-size: 16px; font-weight: bold; margin-bottom: 5px;">2023年农业新技术应用与展望</div>
+                            <div style="display: flex; justify-content: space-between; font-size: 12px;">
+                                <div>农业部专家组</div>
+                                <div>在线: 2.3万人</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex; justify-content: space-between;">
+                        <div style="width: 48%; position: relative;">
+                            <img src="https://via.placeholder.com/360x200/FF9800/FFFFFF?text=预约直播" style="width: 100%; border-radius: 8px;" alt="预约直播">
+                            <div style="position: absolute; top: 10px; left: 10px; background-color: rgba(76, 175, 80, 0.8); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                                预约
+                            </div>
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                <div style="font-size: 14px; font-weight: bold; margin-bottom: 3px;">有机蔬菜种植技术</div>
+                                <div style="font-size: 12px;">05-20 19:30</div>
+                            </div>
+                        </div>
+                        <div style="width: 48%; position: relative;">
+                            <img src="https://via.placeholder.com/360x200/2E7D32/FFFFFF?text=预约直播" style="width: 100%; border-radius: 8px;" alt="预约直播">
+                            <div style="position: absolute; top: 10px; left: 10px; background-color: rgba(76, 175, 80, 0.8); color: white; padding: 2px 8px; border-radius: 4px; font-size: 12px;">
+                                预约
+                            </div>
+                            <div style="position: absolute; bottom: 0; left: 0; width: 100%; padding: 10px; background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0)); color: white; border-radius: 0 0 8px 8px;">
+                                <div style="font-size: 14px; font-weight: bold; margin-bottom: 3px;">农产品电商营销策略</div>
+                                <div style="font-size: 12px;">05-22 20:00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 问答内容 -->
+        <div class="knowledge-content" style="display: none;">
+            <!-- 问题分类 -->
+            <div style="background-color: white; padding: 15px; margin-bottom: 10px;">
+                <div style="display: flex; overflow-x: auto; padding-bottom: 5px;">
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: var(--primary-color); color: white; border-radius: 15px; margin-right: 10px;">
+                        全部
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: #f5f5f5; color: #666; border-radius: 15px; margin-right: 10px;">
+                        种植技术
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: #f5f5f5; color: #666; border-radius: 15px; margin-right: 10px;">
+                        病虫害防治
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: #f5f5f5; color: #666; border-radius: 15px; margin-right: 10px;">
+                        农资使用
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: #f5f5f5; color: #666; border-radius: 15px; margin-right: 10px;">
+                        市场行情
+                    </div>
+                    <div style="flex: 0 0 auto; padding: 5px 15px; background-color: #f5f5f5; color: #666; border-radius: 15px;">
+                        政策咨询
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 提问按钮 -->
+            <div style="padding: 0 15px; margin-bottom: 10px;">
+                <button class="btn btn-primary" style="width: 100%; height: 40px;">
+                    <i class="fas fa-edit" style="margin-right: 5px;"></i> 我要提问
+                </button>
+            </div>
+            
+            <!-- 热门问答 -->
+            <div class="product-section">
+                <div class="section-header">
+                    <div class="section-title">热门问答</div>
+                    <div class="section-more">更多 <i class="fas fa-chevron-right"></i></div>
+                </div>
+                <div class="qa-list">
+                    <div class="qa-item">
+                        <div class="qa-question">
+                            <span class="tag tag-green">提问</span> 水稻田间出现黄叶，是什么原因？
+                        </div>
+                        <div class="qa-answer">
+                            <span class="tag tag-orange">回答</span> 水稻黄叶可能有多种原因：1. 缺素症状，特别是氮肥不足；2. 病虫害侵染，如稻瘟病；3. 水分管理不当，如长期渍水。建议检查叶片具体症状，如黄化位置、是否有斑点等，以确定具体原因。
+                        </div>
+                        <div class="qa-meta">
+                            <span class="qa-expert">张农博士</span>
+                            <span class="qa-time">2023-05-12</span>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-question">
+                            <span class="tag tag-green">提问</span> 苹果树春季应该如何修剪？
+                        </div>
+                        <div class="qa-answer">
+                            <span class="tag tag-orange">回答</span> 苹果树春季修剪应在萌芽前进行，主要目的是调整树形、控制树势。修剪原则：1. 去除病弱枝、重叠枝；2. 保留结果枝组；3. 适当短截延长枝；4. 注意光照均匀分布。修剪时要根据树龄和品种特性调整强度。
+                        </div>
+                        <div class="qa-meta">
+                            <span class="qa-expert">刘果树专家</span>
+                            <span class="qa-time">2023-05-09</span>
+                        </div>
+                    </div>
+                    <div class="qa-item">
+                        <div class="qa-question">
+                            <span class="tag tag-green">提问</span> 有机肥和化肥应该如何合理搭配使用？
+                        
